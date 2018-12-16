@@ -1,0 +1,6 @@
+# Routings
+POST    /movies     com.eleks.playhttp.controllers.MovieController.addMovie
+GET     /movies     com.eleks.playhttp.controllers.MovieController.getAll
+GET     /movies/:id com.eleks.playhttp.controllers.MovieController.getMovie(id: Long)
+POST     /schedule    com.eleks.playhttp.controllers.ScheduleController.addSchedule
+GET      /schedule    com.eleks.playhttp.controllers.ScheduleController.getAll(genre: String ?= "")
